@@ -3,8 +3,8 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-blue-100">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-blue-700">BlueBeat</span>
-          <span className="text-xs text-blue-400 font-medium mt-1">株式会社</span>
+          <span className="text-sm text-blue-400 font-medium mt-1">株式会社</span>
+          <span className="text-2xl font-bold text-blue-700">ブルービート</span>
         </div>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
           <a href="#services" className="hover:text-blue-600 transition-colors">サービス</a>

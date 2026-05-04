@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
           <div>
-            <p className="text-xl font-bold text-white mb-2">BlueBeat 株式会社</p>
+            <p className="text-xl font-bold text-white mb-2">株式会社ブルービート</p>
             <p className="text-sm">AIが人を豊かにする。</p>
           </div>
           <div className="grid grid-cols-2 gap-8 text-sm">
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-6 text-sm text-center">
-          <p>© {new Date().getFullYear()} BlueBeat 株式会社. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} 株式会社ブルービート. All rights reserved.</p>
         </div>
       </div>
     </footer>
