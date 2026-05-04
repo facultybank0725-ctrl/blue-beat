@@ -22,7 +22,7 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-8 w-full">
         <div className="max-w-4xl">
-          <p className="text-[11px] tracking-[0.4em] text-blue-400 uppercase font-light mb-8">
+          <p className="text-lg tracking-[0.3em] text-blue-400 font-medium mb-8">
             AI × 経理 × 財務顧問
           </p>
           <h1 className="text-7xl md:text-[96px] font-bold text-white leading-[0.95] tracking-tight mb-10">
