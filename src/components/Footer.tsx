@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <div className="flex items-baseline gap-2 mb-4">
               <span className="text-[9px] tracking-[0.3em] text-white/20 uppercase font-light">株式会社</span>
-              <span className="text-sm font-semibold tracking-widest text-white uppercase">Bluebeat</span>
+              <span className="text-sm font-semibold tracking-wider text-white">ブルービート</span>
             </div>
             <p className="text-[10px] text-white/20 tracking-[0.3em] font-light uppercase">AI makes people rich.</p>
           </div>

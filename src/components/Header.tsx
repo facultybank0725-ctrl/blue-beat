@@ -4,7 +4,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
         <div className="flex items-baseline gap-2">
           <span className="text-[10px] tracking-[0.3em] text-white/50 uppercase font-light">株式会社</span>
-          <span className="text-base font-semibold tracking-widest text-white uppercase">Bluebeat</span>
+          <span className="text-base font-semibold tracking-wider text-white">ブルービート</span>
         </div>
         <nav className="hidden md:flex items-center gap-12 text-[11px] font-medium text-white/60 tracking-[0.2em] uppercase">
           <a href="#services" className="hover:text-white transition-colors duration-300">Services</a>
