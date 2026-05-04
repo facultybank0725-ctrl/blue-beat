@@ -9,7 +9,7 @@ export default function Contact() {
             <h2 className="text-5xl font-bold text-gray-900 tracking-tight leading-tight mb-8">
               まずは、<br />無料相談から。
             </h2>
-            <p className="text-sm text-gray-600 font-light leading-loose mb-12">
+            <p className="text-sm text-gray-900 font-light leading-loose mb-12">
               AI経理・AI顧問サービスについて、<br />
               お気軽にご相談ください。初回1時間、無料です。
             </p>
