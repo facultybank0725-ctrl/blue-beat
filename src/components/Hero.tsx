@@ -2,44 +2,59 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center">
+    <section className="relative h-screen flex flex-col justify-end pb-24 overflow-hidden bg-gray-950">
       <Image
-        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80"
-        alt="AIと経営"
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1800&q=85"
+        alt="AI technology"
         fill
-        className="object-cover"
+        className="object-cover opacity-40"
         priority
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-950/85 via-gray-900/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent" />
 
-      <div className="relative max-w-6xl mx-auto px-6 py-32">
-        <div className="max-w-2xl">
-          <span className="inline-block text-xs tracking-[0.25em] uppercase text-blue-300 font-medium mb-8">
+      {/* 縦書き装飾 */}
+      <div className="absolute right-12 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-4">
+        <span className="text-[10px] tracking-[0.4em] text-white/20 uppercase font-light [writing-mode:vertical-rl]">
+          AI Accounting & Advisory
+        </span>
+        <div className="w-px h-24 bg-white/10" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-8 w-full">
+        <div className="max-w-4xl">
+          <p className="text-[11px] tracking-[0.4em] text-blue-400 uppercase font-light mb-8">
             AI × 経理 × 財務顧問
-          </span>
-          <h1 className="text-6xl md:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-8">
-            AIが、<br />
-            <span className="text-blue-400">人を豊かにする。</span>
-          </h1>
-          <p className="text-lg text-gray-300 leading-loose mb-12 font-light">
-            煩雑な経理作業をAIに任せて、<br />
-            経営者が本当に大切なことに向き合える時間を。
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="#contact"
-              className="bg-white text-gray-900 font-medium px-8 py-4 rounded-full hover:bg-blue-50 transition-colors text-center tracking-wide text-sm"
-            >
-              無料相談を予約する
-            </a>
-            <a
-              href="#services"
-              className="border border-white/40 text-white font-medium px-8 py-4 rounded-full hover:bg-white/10 transition-colors text-center tracking-wide text-sm"
-            >
-              サービスを見る →
-            </a>
+          <h1 className="text-7xl md:text-[96px] font-bold text-white leading-[0.95] tracking-tight mb-10">
+            AIが、<br />
+            <em className="not-italic text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
+              人を豊かにする。
+            </em>
+          </h1>
+          <div className="flex items-end justify-between flex-wrap gap-8">
+            <p className="text-sm text-white/40 leading-loose font-light max-w-md">
+              煩雑な経理作業をAIに任せて、<br />
+              経営者が本当に大切なことに向き合える時間を。
+            </p>
+            <div className="flex items-center gap-6">
+              <a
+                href="#contact"
+                className="bg-blue-500 text-white text-[11px] font-medium px-8 py-4 tracking-[0.2em] uppercase hover:bg-blue-400 transition-colors duration-300"
+              >
+                無料相談を予約する
+              </a>
+              <a href="#services" className="text-[11px] text-white/40 tracking-[0.2em] uppercase hover:text-white transition-colors duration-300">
+                Services →
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+
+      {/* スクロール */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <span className="text-[9px] tracking-[0.4em] text-white/20 uppercase">Scroll</span>
+        <div className="w-px h-10 bg-gradient-to-b from-white/20 to-transparent" />
       </div>
     </section>
   );
