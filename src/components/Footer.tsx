@@ -19,7 +19,7 @@ export default function Footer() {
             <div>
               <p className="text-white font-medium mb-3">会社情報</p>
               <ul className="space-y-2 text-sm">
-                <li>静岡県沼津市大岡403-1-101</li>
+                <li>〒153-0061 東京都目黒区中目黒3-19-7 パークプレイス中目黒</li>
                 <li>takashi.aoyagi@blue-beat.co.jp</li>
               </ul>
             </div>

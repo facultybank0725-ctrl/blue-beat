@@ -50,7 +50,7 @@ export default function About() {
               ))}
             </div>
             <div className="text-sm text-gray-400 space-y-1">
-              <p>📍 静岡県沼津市大岡403-1-101</p>
+              <p>📍 〒153-0061 東京都目黒区中目黒3-19-7 パークプレイス中目黒</p>
               <p>✉️ takashi.aoyagi@blue-beat.co.jp</p>
             </div>
           </div>
