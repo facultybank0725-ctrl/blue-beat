@@ -77,7 +77,7 @@ export default function Services() {
             </div>
 
             {/* テキスト */}
-            <div className={`flex flex-col justify-center px-12 py-12 transition-colors duration-500 group-hover:bg-blue-50 ${i % 2 === 1 ? "md:order-1" : ""}`}>
+            <div className={`flex flex-col justify-center px-12 py-12 transition-colors duration-500 group-hover:bg-blue-200 ${i % 2 === 1 ? "md:order-1" : ""}`}>
               <p className="text-[10px] tracking-[0.3em] text-blue-500 uppercase font-light mb-3">{service.subtitle}</p>
               <h3 className="text-3xl font-bold text-gray-900 tracking-tight mb-5">{service.title}</h3>
               <p className="text-sm text-gray-600 leading-loose font-light mb-8">{service.description}</p>
