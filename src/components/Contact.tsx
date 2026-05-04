@@ -5,11 +5,11 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-20">
           {/* 左 */}
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-gray-400 font-light mb-6">Contact</p>
+            <p className="text-[10px] tracking-[0.4em] uppercase text-gray-600 font-light mb-6">Contact</p>
             <h2 className="text-5xl font-bold text-gray-900 tracking-tight leading-tight mb-8">
               まずは、<br />無料相談から。
             </h2>
-            <p className="text-sm text-gray-400 font-light leading-loose mb-12">
+            <p className="text-sm text-gray-600 font-light leading-loose mb-12">
               AI経理・AI顧問サービスについて、<br />
               お気軽にご相談ください。初回1時間、無料です。
             </p>
@@ -19,7 +19,7 @@ export default function Contact() {
                 { label: "メール", value: "takashi.aoyagi@blue-beat.co.jp" },
               ].map((item) => (
                 <div key={item.label} className="border-t border-gray-100 pt-6">
-                  <p className="text-[10px] tracking-[0.3em] uppercase text-gray-300 mb-2 font-light">{item.label}</p>
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-gray-500 mb-2 font-light">{item.label}</p>
                   <p className="text-sm text-gray-600 font-light whitespace-pre-line">{item.value}</p>
                 </div>
               ))}
@@ -35,7 +35,7 @@ export default function Contact() {
                 { label: "メールアドレス", type: "email", placeholder: "example@company.co.jp", required: true },
               ].map((field) => (
                 <div key={field.label} className="border-b border-gray-200 pb-2">
-                  <label className="block text-[10px] tracking-[0.3em] uppercase text-gray-400 font-light mb-3">
+                  <label className="block text-[10px] tracking-[0.3em] uppercase text-gray-600 font-light mb-3">
                     {field.label}{field.required && <span className="text-blue-400 ml-1">*</span>}
                   </label>
                   <input
@@ -47,7 +47,7 @@ export default function Contact() {
               ))}
 
               <div className="border-b border-gray-200 pb-2">
-                <label className="block text-[10px] tracking-[0.3em] uppercase text-gray-400 font-light mb-3">
+                <label className="block text-[10px] tracking-[0.3em] uppercase text-gray-600 font-light mb-3">
                   ご興味のあるサービス
                 </label>
                 <select className="w-full text-sm text-gray-500 bg-transparent focus:outline-none py-1 appearance-none">
@@ -60,7 +60,7 @@ export default function Contact() {
               </div>
 
               <div className="border-b border-gray-200 pb-2">
-                <label className="block text-[10px] tracking-[0.3em] uppercase text-gray-400 font-light mb-3">
+                <label className="block text-[10px] tracking-[0.3em] uppercase text-gray-600 font-light mb-3">
                   ご相談内容
                 </label>
                 <textarea

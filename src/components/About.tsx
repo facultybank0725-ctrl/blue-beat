@@ -6,8 +6,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-8 py-28">
         {/* ヘッダー */}
         <div className="flex items-end justify-between mb-20 border-b border-white/10 pb-10">
-          <p className="text-[10px] tracking-[0.4em] uppercase text-white/30 font-light">About</p>
-          <p className="text-xs text-white/30 font-light tracking-wide">株式会社ブルービート</p>
+          <p className="text-[10px] tracking-[0.4em] uppercase text-white/60 font-light">About</p>
+          <p className="text-xs text-white/60 font-light tracking-wide">株式会社ブルービート</p>
         </div>
 
         <div className="grid md:grid-cols-12 gap-12 items-start">
@@ -15,12 +15,12 @@ export default function About() {
           <div className="md:col-span-7">
             <blockquote className="text-4xl md:text-5xl font-bold leading-tight tracking-tight text-white mb-12">
               「売上は伸びているのに、<br />
-              <span className="text-white/30">なぜかお金が足りない」</span>
+              <span className="text-white/60">なぜかお金が足りない」</span>
             </blockquote>
-            <p className="text-sm text-white/40 leading-loose font-light mb-6 max-w-xl">
+            <p className="text-sm text-white/75 leading-loose font-light mb-6 max-w-xl">
               そんな経営者の声を何度も聞いてきました。問題は売上ではなく、キャッシュフローの管理にあることがほとんどです。
             </p>
-            <p className="text-sm text-white/40 leading-loose font-light max-w-xl">
+            <p className="text-sm text-white/75 leading-loose font-light max-w-xl">
               私たちブルービートは、AIを活用した経理・財務サービスで、中小企業が本来の力を発揮できる環境をつくります。東京都目黒区を拠点に、全国の経営者をサポートしています。
             </p>
 
@@ -34,7 +34,7 @@ export default function About() {
               ].map((stat) => (
                 <div key={stat.label} className="pr-6 border-r border-white/10 last:border-0">
                   <p className="text-3xl font-bold text-white tracking-tight">{stat.value}</p>
-                  <p className="text-[10px] text-white/30 mt-1.5 tracking-widest uppercase font-light">{stat.label}</p>
+                  <p className="text-[10px] text-white/60 mt-1.5 tracking-widest uppercase font-light">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -51,7 +51,7 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-950/60 to-transparent" />
             </div>
-            <div className="mt-6 text-[11px] text-white/20 font-light leading-relaxed tracking-wide">
+            <div className="mt-6 text-[11px] text-white/50 font-light leading-relaxed tracking-wide">
               <p>〒153-0061</p>
               <p>東京都目黒区中目黒3-19-7 パークプレイス中目黒</p>
               <p className="mt-1">takashi.aoyagi@blue-beat.co.jp</p>

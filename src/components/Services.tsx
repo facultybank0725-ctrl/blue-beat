@@ -42,10 +42,10 @@ export default function Services() {
       {/* セクションヘッダー */}
       <div className="max-w-7xl mx-auto px-8 pt-28 pb-16 flex items-end justify-between border-b border-gray-100">
         <div>
-          <p className="text-[10px] tracking-[0.4em] uppercase text-gray-400 font-light mb-4">Services</p>
+          <p className="text-[10px] tracking-[0.4em] uppercase text-gray-600 font-light mb-4">Services</p>
           <h2 className="text-5xl font-bold text-gray-900 tracking-tight">私たちが提供する<br />3つのサービス</h2>
         </div>
-        <p className="text-sm text-gray-400 font-light leading-relaxed max-w-xs text-right hidden md:block">
+        <p className="text-sm text-gray-600 font-light leading-relaxed max-w-xs text-right hidden md:block">
           面倒な経理・財務業務はAIに任せて、<br />経営者が本業に集中できる仕組みを。
         </p>
       </div>
@@ -80,10 +80,10 @@ export default function Services() {
             <div className={`flex flex-col justify-center px-12 py-12 ${i % 2 === 1 ? "md:order-1" : ""}`}>
               <p className="text-[10px] tracking-[0.3em] text-blue-500 uppercase font-light mb-3">{service.subtitle}</p>
               <h3 className="text-3xl font-bold text-gray-900 tracking-tight mb-5">{service.title}</h3>
-              <p className="text-sm text-gray-400 leading-loose font-light mb-8">{service.description}</p>
+              <p className="text-sm text-gray-600 leading-loose font-light mb-8">{service.description}</p>
               <ul className="space-y-2.5 mb-8">
                 {service.features.map((f) => (
-                  <li key={f} className="flex items-center gap-3 text-xs text-gray-500 font-light tracking-wide">
+                  <li key={f} className="flex items-center gap-3 text-xs text-gray-700 font-light tracking-wide">
                     <div className="w-4 h-px bg-blue-400 flex-shrink-0" />
                     {f}
                   </li>
@@ -93,7 +93,7 @@ export default function Services() {
                 <p className={`text-sm font-semibold tracking-wide ${service.limited ? "text-red-500" : "text-blue-600"}`}>
                   {service.price}
                 </p>
-                <a href="#contact" className="text-[10px] tracking-[0.3em] uppercase text-gray-400 hover:text-gray-900 transition-colors">
+                <a href="#contact" className="text-[10px] tracking-[0.3em] uppercase text-gray-600 hover:text-gray-900 transition-colors">
                   詳しく →
                 </a>
               </div>
