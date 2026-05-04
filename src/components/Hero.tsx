@@ -1,15 +1,60 @@
+"use client";
+
 import Image from "next/image";
+import { useState, useEffect } from "react";
+
+const images = [
+  {
+    src: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1800&q=85",
+    alt: "AI technology",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1800&q=85",
+    alt: "AI robot",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1800&q=85",
+    alt: "Finance",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1800&q=85",
+    alt: "Business meeting",
+  },
+];
 
 export default function Hero() {
+  const [current, setCurrent] = useState(0);
+  const [fading, setFading] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFading(true);
+      setTimeout(() => {
+        setCurrent((prev) => (prev + 1) % images.length);
+        setFading(false);
+      }, 700);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative h-screen flex flex-col justify-end pb-24 overflow-hidden bg-gray-950">
-      <Image
-        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1800&q=85"
-        alt="AI technology"
-        fill
-        className="object-cover opacity-40"
-        priority
-      />
+      {/* 背景画像スライドショー */}
+      {images.map((img, i) => (
+        <div
+          key={img.src}
+          className="absolute inset-0 transition-opacity duration-700"
+          style={{ opacity: i === current ? (fading ? 0 : 1) : 0 }}
+        >
+          <Image
+            src={img.src}
+            alt={img.alt}
+            fill
+            className="object-cover opacity-40"
+            priority={i === 0}
+          />
+        </div>
+      ))}
       <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent" />
 
       {/* 縦書き装飾 */}
@@ -18,6 +63,17 @@ export default function Hero() {
           AI Accounting & Advisory
         </span>
         <div className="w-px h-24 bg-white/10" />
+      </div>
+
+      {/* インジケーター */}
+      <div className="absolute right-8 bottom-24 flex flex-col gap-2">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => { setFading(false); setCurrent(i); }}
+            className={`w-px transition-all duration-300 ${i === current ? "h-8 bg-white" : "h-4 bg-white/30"}`}
+          />
+        ))}
       </div>
 
       <div className="relative max-w-7xl mx-auto px-8 w-full">
