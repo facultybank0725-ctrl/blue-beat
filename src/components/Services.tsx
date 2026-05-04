@@ -8,7 +8,7 @@ const services = [
     description:
       "領収書や請求書をAIが自動で読み取り、仕訳・記帳まで一括処理。月次決算を最短3日で。経理の手間を大幅に削減し、本業に集中できる環境をつくります。",
     features: ["領収書・請求書のAI自動読取", "自動仕訳・記帳", "月次レポート自動生成", "クラウド会計ソフト連携"],
-    price: "月額 3万円〜",
+    price: "2社限定 50万円",
   },
   {
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
@@ -75,7 +75,9 @@ export default function Services() {
                   ))}
                 </ul>
                 <div className="border-t border-gray-100 pt-4">
-                  <p className="text-blue-700 font-bold text-sm">{service.price}</p>
+                  <p className={`font-bold text-sm ${service.price.includes("限定") ? "text-red-600" : "text-blue-700"}`}>
+                    {service.price}
+                  </p>
                 </div>
               </div>
             </div>
