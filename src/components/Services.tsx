@@ -11,7 +11,7 @@ const services = [
     price: "2社限定 50万円",
   },
   {
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80",
     title: "AI顧問",
     subtitle: "財務戦略・資金調達をサポート",
     description:
