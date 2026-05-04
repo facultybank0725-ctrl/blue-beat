@@ -25,7 +25,7 @@ export default function Hero() {
           <p className="text-lg tracking-[0.3em] text-blue-400 font-medium mb-8">
             AI × 経理 × 財務顧問
           </p>
-          <h1 className="text-7xl md:text-[96px] font-bold text-white leading-[0.95] tracking-tight mb-10">
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-[0.95] tracking-tight mb-10">
             AIが、<br />
             <em className="not-italic text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
               人を豊かにする。
