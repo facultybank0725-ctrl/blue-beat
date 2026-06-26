@@ -30,9 +30,9 @@ export default function Footer() {
             <div>
               <p className="text-[9px] tracking-[0.3em] uppercase text-white/20 font-light mb-5">Access</p>
               <ul className="space-y-2 font-light text-white/30 leading-relaxed">
-                <li>〒153-0061</li>
-                <li>東京都目黒区</li>
-                <li>中目黒3-19-7</li>
+                <li>〒410-0022</li>
+                <li>静岡県沼津市</li>
+                <li>大岡403-1 101</li>
               </ul>
             </div>
           </div>
